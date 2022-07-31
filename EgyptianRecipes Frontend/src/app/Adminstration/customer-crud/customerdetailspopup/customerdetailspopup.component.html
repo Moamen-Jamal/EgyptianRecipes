@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div class="container" *ngIf="Data">
+    <div class="row">
+        <div class="imgcontainer" style="height: 200px;">
+            <div  style="height:150px; ">
+            <img [src]="url+'Uploads/'+Data.Photo" style="margin-left:45%;" alt="Avatar"
+                class="avatar">
+            </div>
+            <br>
+            <div  style="height: 50px;" >
+            <p style="font-size: 25px;width: 200px;  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+             margin-left: 150px;box-sizing: border-box;line-height: 30px;">{{Data.Name}}</p>
+             </div>
+        </div>
+
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-6">
+            <label for="city"><b>Phone</b></label><br><br>
+            <label for="city"><b>E-mail</b></label><br><br>
+        </div>
+        <div class="col-6">
+            <label for="city"><b>{{Data.Phone}}</b></label><br><br>
+            <label for="city"><b>{{Data.Email}}</b></label><br><br>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class=" col-6">
+            <div>
+                <button type="button" class="btn btn-danger" style="width: 80px;margin-left: 70px;" (click)="OnDelete()"
+                    >Delete</button>
+            </div>
+        </div>
+        <div class="col-6">
+            <button type="submit" (click)="updateCustomer(Data.ID)" class="cancelbtn">Update</button> <br>
+        </div>
+    </div>
+    <br>  <br>
+    <div class="row">
+        <i [mat-dialog-close] class="fa fa-arrow-circle-left" style="cursor: pointer;"></i>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+D:\Visual\EgyptianRecipes\Repositories\obj\Debug\Repositories.csproj.CoreCompileInputs.cache
+D:\Visual\EgyptianRecipes\Repositories\bin\Debug\Repositories.dll.config
+D:\Visual\EgyptianRecipes\Repositories\bin\Debug\Repositories.dll
+D:\Visual\EgyptianRecipes\Repositories\bin\Debug\Repositories.pdb
+D:\Visual\EgyptianRecipes\Repositories\bin\Debug\Entities.dll
+D:\Visual\EgyptianRecipes\Repositories\bin\Debug\EntityFramework.dll
+D:\Visual\EgyptianRecipes\Repositories\bin\Debug\EntityFramework.SqlServer.dll
+D:\Visual\EgyptianRecipes\Repositories\bin\Debug\Entities.pdb
+D:\Visual\EgyptianRecipes\Repositories\bin\Debug\Entities.dll.config
+D:\Visual\EgyptianRecipes\Repositories\bin\Debug\EntityFramework.xml
+D:\Visual\EgyptianRecipes\Repositories\bin\Debug\EntityFramework.SqlServer.xml
+D:\Visual\EgyptianRecipes\Repositories\obj\Debug\Repositories.csprojAssemblyReference.cache
+D:\Visual\EgyptianRecipes\Repositories\obj\Debug\Repositories.csproj.CopyComplete
+D:\Visual\EgyptianRecipes\Repositories\obj\Debug\Repositories.dll
+D:\Visual\EgyptianRecipes\Repositories\obj\Debug\Repositories.pdb
+D:\Visual\EgyptianRecipes\Repositories\obj\Debug\Repositories.Migrations.EgyptianRecipesDB.resources
+D:\Visual\EgyptianRecipes\Repositories\obj\Debug\Repositories.csproj.GenerateResource.cache

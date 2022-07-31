@@ -1,0 +1,140 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<i [mat-dialog-close] class=" fa fa-arrow-circle-left"></i>
+<form #f="ngForm" name="form" [formGroup]="form" (ngSubmit)="form.valid&&OnUpdate()">
+  <div class="container">
+
+
+    <div class="row">
+      <div class="form-group row" style="margin-top:7px;margin-left: 30px;">
+        <label for="Name" class="col-4 col-form-label" style="text-align: left;">Name</label>
+        <div class="col-8">
+          <input type="text" style="text-align:right;font-size: 18px;" placeholder="Enter the name" id="name"
+            [(ngModel)]="customer.Name" nname="fname" required formControlName="fname"
+            [ngClass]="{'is-invalid':form.get('fname').touched && form.get('fname').invalid}" required>
+          <!-- validiton message -->
+          <div  *ngIf="form.get('fname').touched && form.get('fname').invalid" class="invalid-feedback">
+            <div *ngIf="form.get('fname').errors.required" style="color:red; font-size:18px">Enter the name</div>
+            <div *ngIf="form.get('fname').errors.minlength" style="color:red; font-size:18px">Enter at least 3 characters</div>
+            <div *ngIf="form.get('fname').errors.maxlength" style="color:red; font-size:18px">max characters are 16</div>
+            <div *ngIf="form.get('fname').errors.pattern" style="color:red; font-size:18px"> Enter chatacters only</div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row" style="margin-top:7px;margin-left: 30px;">
+        <label for="UserName" class="col-4 col-form-label" style="text-align: left;">UserName</label>
+        <div class="col-8">
+          <input type="text" class="form-control" id="inputPassword" style="margin-left: 10px;width: 200px;"
+            placeholder="Enter a username" [(ngModel)] = "customer.UserName"  required formControlName="userName"
+            [ngClass]="{'is-invalid':form.get('userName').touched && form.get('userName').invalid}">
+          <!-- validiton message -->
+          <div  *ngIf="form.get('userName').touched && form.get('userName').invalid" class="invalid-feedback">
+            <div *ngIf="form.get('userName').errors.required" style="color:red; font-size:18px">Enter the username</div>
+            <div *ngIf="form.get('userName').errors.minlength"  style="color:red; font-size:18px">min characters are 3</div>
+            <div *ngIf="form.get('userName').errors.maxlength"  style="color:red; font-size:18px">max characters are 16</div>
+            <!-- <div *ngIf="form.get('userName').errors.uniqueUsername"  style="color:red; font-size:18px">اسم المسستخدم موجود</div> -->
+          </div>
+
+        </div>
+      </div>
+      <div class="form-group row" style="margin-top:7px;margin-left: 30px;">
+        <label for="Password" class="col-4 col-form-label" style="text-align: left;">Password</label>
+        <div class="col-8">
+          <input type="password" class="form-control" id="inputPassword" style="margin-left: 10px;width: 200px;"
+            placeholder="Enter the password" [(ngModel)] = "customer.Password" required formControlName="password"
+            [ngClass]="{'is-invalid':form.get('password').touched && form.get('password').invalid}">
+          <!-- validiton message -->
+          <div  *ngIf="form.get('password').touched && form.get('password').invalid" class="invalid-feedback">
+            <div *ngIf="form.get('password').errors.required"  style="color:red; font-size:18px">password is required</div>
+            <div *ngIf="form.get('password').errors.minlength"  style="color:red; font-size:18px">min letters are 3</div>
+            <div *ngIf="form.get('password').errors.maxlength" style="color:red; font-size:18px">max letters are 16</div>
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="form-group row" style="margin-left: 30px;">
+        <label for="Email" class="col-4 col-form-label" style="text-align: left;">Email</label>
+        <div class="col-8">
+          <input type="Email" class="form-control" id="inputPassword" style="margin-left: 10px;width: 200px;"
+            placeholder="Enter a valid Email" [(ngModel)]="customer.Email" name="email" required formControlName="email"
+            [ngClass]="{'is-invalid':form.get('email').touched && form.get('email').invalid}">
+          <!-- validiton message -->
+          <div  *ngIf="form.get('email').touched && form.get('email').invalid" class="invalid-feedback">
+            <div *ngIf="form.get('email').errors.required"  style="color:red; font-size:18px">Email is required</div>
+            <div *ngIf="form.get('email').errors.pattern"  style="color:red; font-size:18px">Enter a valiad Email</div>
+            <!-- <div *ngIf="form.get('email').errors.uniqueEmail"  style="color:red; font-size:18px"> البريد الكتروني موجود </div> -->
+          </div>
+
+
+        </div>
+      </div>
+      <div class="form-group row" style="margin-left: 30px;">
+        <label for="Phone" class="col-4 col-form-label" style="text-align: left;">Phone</label>
+        <div class="col-8">
+          <input type="text" class="form-control" id="inputPassword" placeholder="Enter a valid Phone"
+            style="margin-left: 9px;width: 200px;" [(ngModel)]="customer.Phone"  formControlName="phone" maxlength="11"
+            [ngClass]="{'is-invalid':form.get('phone').touched && form.get('phone').invalid}" required>
+          <!-- validiton message -->
+          <div  *ngIf="form.get('phone').touched && form.get('phone').invalid" class="invalid-feedback">
+            <div *ngIf="form.get('phone').errors.required"  style="color:red; font-size:18px">Phone is required</div>
+             <div *ngIf="form.get('phone').errors.pattern"  style="color:red; font-size:18px">Enter an Egyptian phone number</div>
+           </div>
+
+        </div>
+      </div>
+      
+    </div>
+    
+    
+    <div class="form-group row" style="margin-left: 30px;">
+      <label for="inputBirthDate" class="col-4 col-form-label" style="text-align: left;">BirthDate: </label>
+      <div class="col-8">
+        <input class="form-control" type="date"  id="example-date-input"
+          [value]="customer.BirthDate | date:'yyyy-MM-dd'" (input)="customer.BirthDate=parseDate($event.target.value)"
+          name="birthDate"  style="margin-left: 3px;width: 200px;">
+
+        <div class="invalid-feedback">
+          <div style="color:red; font-size:18px">BirthDate is required</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="form-group row" style="margin-left: 30px;">
+      <label for="Photo" class="col-4 col-form-label" style="text-align: center;">Photo</label>
+      <div class="col-8">
+        <div class="container1">
+          <div class="row">
+            <div class="col-6 imgUp" style="margin-left: 30px;">
+              <div class="imagePreview">
+                <div >
+                  <img [src]="url+'Uploads/'+customer.Photo" style="width: 120px; height: 120px;
+                            border-radius: 50%;">
+                </div>
+              </div>
+              <label class="btn btn-primary" style="width: 150px;height: 35px;margin-top: 2px;">
+                Browse
+                <input type="file" class="uploadFile img" (change)="onFileChange($event)" value="Browse"
+                  style="width: 0px;height: 0px;overflow: hidden;" name="photo">
+                <!-- validiton message -->
+
+
+              </label>
+
+              <!-- validiton message -->
+
+
+            </div><!-- col-2 -->
+
+          </div><!-- row -->
+        </div><!-- container -->
+      </div>
+    </div>
+
+
+    <div class="row">
+      <button class="addbtn" type="submit" [disabled]="!form.valid">Update</button>
+    </div>
+    <i style="font-size: 30px;" [mat-dialog-close] class="fa fa-arrow-circle-left"></i>
+  </div>
+</form>

@@ -1,0 +1,125 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<form #f="ngForm" (ngSubmit)="OnAdd()">
+  <div class="container">
+
+
+    <div class="row">
+      <div class="form-group row" style="margin-top:7px;margin-left: 30px;">
+        <label for="Name" class="col-4 col-form-label" style="text-align: left;">Name</label>
+        <div class="col-8">
+          <input type="Name" class="form-control" id="name" style="margin-left: 10px;width: 200px;"
+            placeholder="Enter a name" [(ngModel)]="Name" name="name" ngModel #name="ngModel" required minlength="5"
+            maxlength="16"
+            pattern="^[\u0600-\u065F\u066A-\u06EF\u06FA-\u06FFa-zA-Z]+[\u0600-\u065F\u066A-\u06EF\u06FA-\u06FFa-zA-Z-_ ]*$">
+          <!-- validiton message -->
+          <div for="Name" style="color:red ; " *ngIf="name.touched && name.invalid">
+            <div for="Name" style="color:red ; " *ngIf="name.errors.required">Name is Required</div>
+            <div for="Name" style="color:red ; " *ngIf="name.errors.minlength">Min length is
+              {{name.errors.minlength.requiredLength}} </div>
+          </div>
+          <div for="Name" style="color:red ; " *ngIf="name.errors?.pattern">Must be characters </div>
+
+        </div>
+      </div>
+      <div class="form-group row" style="margin-left: 30px;">
+        <label for="Username" class="col-4 col-form-label" style="text-align: left;">Username</label>
+        <div class="col-8">
+          <input type="Username" class="form-control" id="userName" placeholder="Enter a Username"
+            style="margin-left: 2px;width: 200px;" [(ngModel)]="UserName" required minlength="7" maxlength="16"
+            name="username" ngModel #username="ngModel">
+          <!-- validiton message -->
+          <div for="UserName" style="color:red ; " *ngIf="username.touched && username.invalid">
+            <div for="UserName" style="color:red ; " *ngIf="username.errors.required">UserName is Required</div>
+            <div for="UserName" style="color:red ; " *ngIf="username.errors.minlength">Min length is
+              {{username.errors.minlength.requiredLength}} </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="form-group row" style="margin-left: 30px;">
+        <label for="inputPassword" class="col-4 col-form-label" style="text-align: left;">Password</label>
+        <div class="col-8">
+          <input type="password" class="form-control" id="password" placeholder="Password"
+            style="margin-left: 3px;width: 200px;" [(ngModel)]="Password" required name="password" ngModel
+            #password="ngModel" minlength="6">
+          <!-- validiton message -->
+          <div for="password" style="color:red ; " *ngIf="password.touched && password.invalid">
+            <div for="password" style="color:red ; " *ngIf="password.errors?.required">phone is Required</div>
+            <div for="password" style="color:red ; " *ngIf="password.errors?.minlength">Min length is
+              {{password.errors.minlength.requiredLength}}</div>
+          </div>
+
+        </div>
+      </div>
+      <div class="form-group row" style="margin-left: 30px;">
+        <label for="Email" class="col-4 col-form-label" style="text-align: left;">Email</label>
+        <div class="col-8">
+          <input type="Email" class="form-control" id="email" style="margin-left: 10px;width: 200px;"
+            placeholder="Enter a valid Email" [(ngModel)]="Email" name="email" ngModel #email="ngModel" required
+            pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+          <!-- validiton message -->
+          <div for="email" style="color:red ; " *ngIf="email.touched && email.invalid">
+            <div for="email" style="color:red ; " *ngIf="email.errors?.required">Email is Required</div>
+            <div for="email" style="color:red ; " *ngIf="email.errors?.pattern">Must be a Email</div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="form-group row" style="margin-left: 30px;">
+        <label for="Phone" class="col-4 col-form-label" style="text-align: left;">Phone</label>
+        <div class="col-8">
+          <input type="Phone" class="form-control" id="phone" placeholder="Enter a valid Phone"
+            style="margin-left: 9px;width: 200px;" [(ngModel)]="Phone" name="phone" ngModel #phone="ngModel" required
+            pattern="^01[0-2||5]{1}[0-9]{8}">
+          <!-- validiton message -->
+          <div for="phone" style="color:red ; " *ngIf="phone.touched && phone.invalid">
+            <div for="phone" style="color:red ; " *ngIf="phone.errors?.required">phone is Required</div>
+            <div for="phone" style="color:red ; " *ngIf="phone.errors?.pattern">Must be a Mobile Nubmer</div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="form-group row" style="margin-left: 30px;">
+        <label for="Photo" class="col-4 col-form-label" style="text-align: center;">Photo</label>
+        <div class="col-8">
+          <div class="container1">
+            <div class="row">
+              <div class="col-6 imgUp" style="margin-left: 30px;">
+                <div class="imagePreview">
+                  <div *ngIf="Photo">
+                    <img [src]="url+'Uploads/'+Photo" style="width: 120px; height: 120px;
+                            border-radius: 50%;">
+                  </div>
+                </div>
+                <label class="btn btn-primary" style="width: 150px;height: 35px;margin-top: 2px;">
+                  Browse
+                  <input type="file" class="uploadFile img" (change)="onFileChange($event)" value="Browse"
+                    style="width: 0px;height: 0px;overflow: hidden;" name="photo" ngModel #photo="ngModel" required>
+                  <!-- validiton message -->
+                  <div for="photo" style="color:red ; " *ngIf="photo.touched && photo.invalid">
+                    <div for="photo" style="color:red ; " *ngIf="photo.errors?.required">Photo is Required</div>
+                  </div>
+
+                </label>
+
+                <!-- validiton message -->
+
+
+              </div><!-- col-2 -->
+
+            </div><!-- row -->
+          </div><!-- container -->
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <button type="submit" class="addbtn" [disabled]="f.invalid" [mat-dialog-close]>Add</button>
+    </div>
+    <i style="font-size: 30px;" [mat-dialog-close] class="fa fa-arrow-circle-left"></i>
+  </div>
+</form>

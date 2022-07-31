@@ -1,0 +1,89 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <nav *ngIf = "User" class="navbar navbar-expand-md  fixed-top" style="height: 50px;background-color:#7A9E7E;">
+        
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+          
+                <li><a href="#" class="fa fa-bell"
+                        style="color: #31493C;font-size: 32px;margin-top: 10px;;margin-right: 40px;"></a>
+                </li>
+                <li>
+                    <div>
+                        <img [src]="url+'Uploads/'+User.Photo" (click)=" adminaccount()"
+                            class="navphoto">
+                    </div>
+                </li>
+              
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <div class="wrapper" *ngIf = "User">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <br>
+                <button class="button" routerLink="/Admin/AdminHome" style="height:  50px;">Adminstration Area</button>
+            </div>
+
+            <ul *ngIf="User" class="list-unstyled components">
+                <div> <img [src]="url+'Uploads/'+User.Photo" class="profilimg">
+                </div><br>
+                <p class="name" >{{User.Name}}</p>
+
+                <li>
+                    <button class="button" routerLink="/Admin/BranchCrud">Branches </button>
+                </li>
+                
+                <li class="active">
+                    <button class="button" routerLink="/Admin/AdminCrud">Admins </button>
+                </li>
+                <li>
+                    <button class="button" routerLink="/Admin/CustomerCrud">Customers </button>
+                </li>
+                
+                <li>
+                    <button class="button" (click)="LogOut()" style="height: 45px;position: absolute;bottom: 0px;">Log
+                        out</button>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="content"  >
+            <nav class="navbar navbar-expand-lg  ">
+                <div class="container" >
+
+                    <!-- <app-master></app-master> -->
+                    <router-outlet></router-outlet>
+                    <!-- <app-customer-crud></app-customer-crud> -->
+                    <!-- <app-chief-crud></app-chief-crud>  -->
+                    <!-- <app-admins-crud></app-admins-crud> -->
+                    <!-- <app-categories-crud></app-categories-crud> -->
+                </div>
+            </nav>
+
+        </div>
+    </div>
+    <!--footer-->
+    <!-- <nav style="background-color: #7A9E7E;height: 20%;" class="navbar navbar-lg ">
+
+        <div style="text-align: center;width: 100%;">
+
+            <a class="navbar-brand" style="color:#001A23 ;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" href="#footer">Contact Us</a>
+            
+            <p style="text-align: center;width: 100%;">© All right Reversed.</p>
+        </div>
+
+    </nav> -->
+
+
+<!-- <router-outlet></router-outlet> -->

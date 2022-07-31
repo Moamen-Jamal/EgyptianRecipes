@@ -1,0 +1,104 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<i [mat-dialog-close] class=" fa fa-arrow-circle-left"></i>
+<form #f = "ngForm" (ngSubmit) = "OnUpdate()">
+<div class="container" *ngIf = "branch">
+    <br> <br> <br>
+<div class="row">
+    <div class="form-group row">
+        <br> <br> <br>
+        <div class="col-sm-4">
+            <label for="title" class="col-sm-2 col-form-label" style="text-align: center;"> Title</label>
+        </div>
+        <div class="col-sm-8">
+            <input type="text" style="text-align:right;font-size: 18px;" placeholder="Enter the Title" id="title"
+          [(ngModel)]="branch.Title"   name="title" ngModel #title ="ngModel"   
+          required  minlength="3" maxlength="200" 
+          pattern = "^[\u0600-\u065F\u066A-\u06EF\u06FA-\u06FFa-zA-Z]+[\u0600-\u065F\u066A-\u06EF\u06FA-\u06FFa-zA-Z-_ ]*$">
+           <!-- validiton message -->
+          <div for="Title" style="color:red ; " 
+          *ngIf = "title.touched && title.invalid" >
+          <div for="Title" style="color:red ; " 
+          *ngIf = "title.errors.required">Enter the Title</div>
+          <div for="Title" style="color:red ; " 
+          *ngIf = "title.errors.minlength"> min characters are {{title.errors.minlength.requiredLength}} </div>
+          <div for="Title" style="color:red ; " 
+          *ngIf = "title.errors?.pattern"> Enter characters only</div>
+        </div>
+
+        </div>
+        <br> <br> 
+    </div>
+
+    <div class="form-group row">
+        <br> <br> <br>
+        <div class="col-sm-4">
+            <label for="managerName" class="col-sm-2 col-form-label" style="text-align: center;"> Manager Name</label>
+        </div>
+        <div class="col-sm-8">
+            <input type="text" style="text-align:right;font-size: 18px;" placeholder="Enter the Manager Name" id="managerName"
+          [(ngModel)]="branch.ManagerName"   name="managerName" ngModel #managerName ="ngModel"   
+          required  minlength="3" maxlength="250" 
+          pattern = "^[\u0600-\u065F\u066A-\u06EF\u06FA-\u06FFa-zA-Z]+[\u0600-\u065F\u066A-\u06EF\u06FA-\u06FFa-zA-Z-_ ]*$">
+           <!-- validiton message -->
+          <div for="ManagerName" style="color:red ; " 
+          *ngIf = "managerName.touched && managerName.invalid" >
+          <div for="ManagerName" style="color:red ; " 
+          *ngIf = "managerName.errors.required">Enter the Manager Name</div>
+          <div for="ManagerName" style="color:red ; " 
+          *ngIf = "managerName.errors.minlength"> min characters are {{managerName.errors.minlength.requiredLength}} </div>
+          <div for="ManagerName" style="color:red ; " 
+          *ngIf = "managerName.errors?.pattern"> Enter characters only</div>
+        </div>
+
+        </div>
+        <br> <br> 
+    </div>
+
+    <div class="form-group row" style="margin-left: 30px;">
+        <label for="OpeningHour" class="col-4 col-form-label" style="text-align: left;">OpeningHour: </label>
+        <div class="col-8">
+          <input class="form-control" type="time" min="00:00" max="23:30" step="1800"
+             id="openingHour"
+            [(ngModel)]="branch.OpeningHour"   name="openingHour" ngModel #openingHour ="ngModel"   
+            required   
+            pattern = "[0-9][0-9]:(00|30)"
+             style="margin-left: 3px;width: 200px;">
+  
+          <!-- validiton message -->
+          <div for="OpeningHour" style="color:red ; " 
+          *ngIf = "openingHour.touched && openingHour.invalid" >
+          <div for="OpeningHour" style="color:red ; " 
+          *ngIf = "openingHour.errors.required">Enter the Opening Hour</div>
+          <div for="OpeningHour" style="color:red ; " 
+          *ngIf = "openingHour.errors?.pattern"> Minutes are only 00 or 30</div>
+        </div>
+        </div>
+  
+      </div>
+      <div class="form-group row" style="margin-left: 30px;">
+        <label for="ClosingHour" class="col-4 col-form-label" style="text-align: left;">ClosingHour: </label>
+        <div class="col-8">
+          <input class="form-control" type="time" min="00:00" max="23:30" step="1800"
+             id="closingHour"
+            [(ngModel)]="branch.ClosingHour"   name="closingHour" ngModel #closingHour ="ngModel"   
+            required   
+            pattern = "[0-9][0-9]:(00|30)"
+             style="margin-left: 3px;width: 200px;">
+  
+          <!-- validiton message -->
+          <div for="ClosingHour" style="color:red ; " 
+          *ngIf = "closingHour.touched && closingHour.invalid" >
+          <div for="ClosingHour" style="color:red ; " 
+          *ngIf = "closingHour.errors.required">Enter the Closing Hour</div>
+          <div for="ClosingHour" style="color:red ; " 
+          *ngIf = "closingHour.errors?.pattern"> Minutes are only 00 or 30</div>
+        </div>
+        </div>
+  
+      </div>
+</div>
+<div class="row">
+    <button type="submit" class="addbtn" [disabled]="f.invalid">Update</button> 
+</div>
+</div>
+</form>

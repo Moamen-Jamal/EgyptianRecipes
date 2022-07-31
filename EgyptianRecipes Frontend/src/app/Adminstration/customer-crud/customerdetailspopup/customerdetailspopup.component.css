@@ -1,0 +1,81 @@
+/* Bordered form */
+.container {
+    border: 3px solid #f1f1f1;
+    border-radius: 10px;
+    background-color: #E8F1F2;
+    box-shadow: gray;
+    height: 480px;
+  }
+   /*Center the avatar image inside this container */
+    .imgcontainer {
+      text-align: center;
+    
+    }
+    
+    /* Avatar image */
+    img.avatar {
+      margin-bottom: 10px;
+      width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        margin-left: 120px;
+      }
+     .avatername
+     {
+      font-size: 25px;
+      text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      margin-left: 32%;
+      width: 40%;
+      box-sizing: border-box;
+     }
+    /* Set a style for all buttons */
+    button {
+      
+      color: white;
+      padding: 14px 20px;
+      margin: 15px 0;
+      border: none;
+      cursor: pointer;
+      width: 10%;
+      border-radius: 20px;
+    }
+    .cancelbtn {
+      background-color: #4CAF50;
+      width: 80px;
+      margin-left: 70px;
+    }
+    .fa
+    {
+     height: 50px;
+     width: 50px;
+      margin-top: -50px;
+      margin-bottom: -50px;
+      color: #3A3131;
+      border-radius: 50%;
+      font-size: 36px; 
+      cursor: pointer;
+    }
+    /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#9fc45f; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8ec038; 
+  }
+    
+    

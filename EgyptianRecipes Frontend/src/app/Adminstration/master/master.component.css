@@ -1,0 +1,56 @@
+.btn
+{
+background-color: #31493C;
+color: white;
+height: 50px;
+border-radius: 25px;
+}
+.btn:hover
+{
+    color: wheat;
+    box-shadow: -4px 7px 24px -4px rgba(82,80,82,0.8);
+}
+.card
+{
+    color: #001A23;
+    width: 200px;
+    height: 200px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+    background-color: #E8F1F2;
+    box-shadow: darkgray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card:hover {
+    width: 200px;
+    height: 200px;
+    transform: rotate(360deg);
+}
+    .cardheader
+{
+    height: 50px;
+    background-color: rgb(214, 220, 221);
+    text-align: center;
+    
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#9fc45f; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8ec038; 
+  }

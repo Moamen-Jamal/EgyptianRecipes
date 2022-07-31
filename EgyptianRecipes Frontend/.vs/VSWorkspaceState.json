@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\Adminstration",
+    "\\src\\app\\Adminstration\\admins-crud"
+  ],
+  "SelectedNode": "\\src\\app\\Adminstration\\admins-crud\\admins-crud.component.html",
+  "PreviewInSolutionExplorer": false
+}

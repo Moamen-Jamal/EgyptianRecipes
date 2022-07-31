@@ -1,0 +1,76 @@
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<body>
+
+  <div class="row">
+   
+    <div class="col-5" >
+     <br><br><br>
+      <div class="login-content">
+        <form  #f = "ngForm" class="col s12 " novalidate  [formGroup]="form" name="form"
+         (ngSubmit)="form.valid&&OnSubmit(UserName.value,Password.value)" >
+      
+          <div class="img">
+            <svg viewBox="0 0 960 300" class="svgs">
+              <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="80%">Egy Recipes</text>
+              </symbol>
+    
+              <g class="g-ants">
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+              </g>
+            </svg>
+          </div>
+          <h2 class="title">Welcome</h2>
+          <div class="input-div one " >
+            <div class="i">
+              <i class="fa fa-user"></i>
+            </div>
+            <div class="div"> 
+              <input type="text"   name="UserN" class="form-control" #UserName ngModel
+              style="text-align: right;font-size: 20px;" placeholder="UserName" formControlName="UserN"
+               required>
+               <p class="red-text center error-message" *ngIf="form.get('UserN').hasError('required') &&f.submitted">Enter UserName</p>
+                  
+            </div>
+              
+          </div>
+          <div class="input-div pass ">
+            <div class="i">
+              <i class="fa fa-lock" ></i>
+            </div>
+            <div class="div">
+              <input type="password"  #Password ngModel name="pass" class="form-control" 
+              style="text-align: right;font-size: 20px;" placeholder="Password" formControlName="pass"
+              >
+              <p class="red-text center error-message" *ngIf="form.get('pass').hasError('required') &&f.submitted">Enter Password</p>
+            </div>
+            
+          </div>
+          <div *ngIf="isLoginError" class="red-text center error-message">
+            <i class="material-icons">error</i>{{ErrorMessage}}
+          </div>
+          <button type="submit" class="btn"  >Sign In</button>
+        </form>
+      </div>
+    
+    </div>
+    <div class="col-7">
+      
+
+      
+    </div>
+  </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="https://kit.fontawesome.com/a81368914c.js"></script>

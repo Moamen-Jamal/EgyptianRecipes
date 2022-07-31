@@ -1,0 +1,49 @@
+<br> <br> <br><br><br>
+<div class="row " style="padding: 10px;">
+    <div class="col-3"></div>
+    <div class="col-6"></div>
+    <div class="col-3"></div>
+
+</div>
+<br> <br> <br>
+<div *ngIf="AdminDashBoard" class="row " style="margin-left: 100px;padding: 10px;">
+    <div class="col-3" style=" margin: 20px; ">
+        <div class="card border-secondary mb-3 shadow rounded" style="max-width: 18rem;">
+            
+            <div class="card-body text-secondary">
+                <h5 class="card-title" style="font-size: 30px; text-align: center; "><b>Admins</b></h5>
+                <br> <br>
+                <p class="card-text" style="font-size: 50px; text-align: center;">{{AdminDashBoard.TotalAdmins}}</p>
+            </div> <br> <br>
+            <div class="cardheader" >
+            </div>
+        </div>
+
+    </div>
+    <div class="col-3" style="margin: 20px; ">
+        <div class="card border-secondary mb-3 shadow rounded" style="max-width: 18rem;">
+          
+            <div class="card-body text-secondary">
+                <h5 class="card-title" style="font-size: 25px; text-align: center; "><b>Customers</b></h5>
+                <br> <br>
+                <p class="card-text" style="font-size: 50px; text-align: center;">{{AdminDashBoard.TotalCustomers}}</p>
+            </div> <br> <br>
+            <div class="cardheader">
+            </div>
+        </div>
+    </div>
+    <div class="col-3" style="margin: 20px; ">
+        <div class="card border-secondary mb-3 shadow rounded" style="max-width: 18rem;">
+           
+            <div class="card-body text-secondary">
+                <h5 class="card-title" style="font-size: 25px; text-align: center; "><b>Branches</b></h5>
+                <br> <br>
+                <p class="card-text" style="font-size: 50px; text-align: center;">{{AdminDashBoard.TotalBranches}}</p>
+            </div> <br> <br>
+            <div class="cardheader">
+            </div>
+        </div>
+
+    </div>
+    
+</div>

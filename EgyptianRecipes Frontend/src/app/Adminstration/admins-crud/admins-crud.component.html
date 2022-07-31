@@ -1,0 +1,62 @@
+<br> <br> <br><br><br>
+<div class="row " style="padding: 10px;">
+    <div class="col-3" style="width: 300px;">
+        <button type="button" (click)="addadmin()" style="width: 120px;"
+            class="btn ">Add</button>
+    </div>
+
+    <div class="col-3" style="width: 300px;">
+    </div>
+    <div class="col-6">
+        <button type="button" class="btn  btn-block " style="width: 400px;" 
+        routerLink = "/Home">Go to Home Page</button>
+
+    </div>
+</div>
+<br> <br> <br>
+<div class="containar" style="height: 800px;">
+    <div *ngIf="options.totalItems > 0" class="row " style="margin-left: 15px;padding: 10px;">
+        <div class="col-3" style="border-style: darkcyan solid 1px ;margin: 30px; width: 500px; margin-bottom: 50px;"
+            *ngFor="let Admin of DataList | paginate : options;let index=index">
+            <div class="card border-secondary mb-3 shadow rounded" style="max-width: 18rem;width: 450px">
+
+                <div class="card-body text-secondary">
+                    <div> <img [src]="url+'Uploads/'+Admin.Photo" alt="Admin Photo"
+                            class="profilimg"></div>
+                    <br> <br><br><br>
+                    <p class="card-text"
+                        style="font-size: 30px; text-align: center;overflow-wrap: normal;box-sizing: border-box;line-height: 30px;">
+                        {{Admin.Name}}</p><br>
+                    <p class="card-text" style="font-size: 25px; text-align: center;box-sizing: border-box;">
+                        {{Admin.Phone}}</p>
+                </div> <br>
+                <div class="cardbtn">
+                    <button type="button" (click)="admindetails(Admin.ID)" style="  width: 100px;"
+                        class="btn  rounded-pill shadow rounded">Details</button>
+                </div><br>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+<div style=" text-align: center;">
+    <!-- <ul class="pagination  justify-content-center" style="margin:20px 0">
+        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul> -->
+    <div class="col-xs-12 text-center margin-top-15" *ngIf="options.totalItems>=options.itemsPerPage">
+        <pagination-controls (pageChange)="getNextPrevData($event)" id='pagination' maxSize="10" directionLinks="true"
+            autohide="true" previousLabel="Previous" nextLabel="Next">
+        </pagination-controls>
+    </div>
+    <div class="col-xs-12 text-center margin-top-15" *ngIf="options.totalItems==0">
+        No Data Found
+    </div>
+</div>

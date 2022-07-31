@@ -1,0 +1,12 @@
+D:\Visual\EgyptianRecipes\ViewModels\bin\Debug\ViewModels.dll
+D:\Visual\EgyptianRecipes\ViewModels\bin\Debug\ViewModels.pdb
+D:\Visual\EgyptianRecipes\ViewModels\bin\Debug\Entities.dll
+D:\Visual\EgyptianRecipes\ViewModels\bin\Debug\EntityFramework.dll
+D:\Visual\EgyptianRecipes\ViewModels\bin\Debug\Entities.pdb
+D:\Visual\EgyptianRecipes\ViewModels\bin\Debug\Entities.dll.config
+D:\Visual\EgyptianRecipes\ViewModels\bin\Debug\EntityFramework.xml
+D:\Visual\EgyptianRecipes\ViewModels\obj\Debug\ViewModels.csprojAssemblyReference.cache
+D:\Visual\EgyptianRecipes\ViewModels\obj\Debug\ViewModels.csproj.CoreCompileInputs.cache
+D:\Visual\EgyptianRecipes\ViewModels\obj\Debug\ViewModels.csproj.CopyComplete
+D:\Visual\EgyptianRecipes\ViewModels\obj\Debug\ViewModels.dll
+D:\Visual\EgyptianRecipes\ViewModels\obj\Debug\ViewModels.pdb

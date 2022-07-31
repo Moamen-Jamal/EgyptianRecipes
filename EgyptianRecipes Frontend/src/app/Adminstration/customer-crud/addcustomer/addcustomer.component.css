@@ -1,0 +1,98 @@
+.container{
+    background-color: #E8F1F2;
+     border: 2px solid rgb(187, 187, 187);
+     border-radius: 10px;
+    
+    }
+    
+    
+    
+    .imagePreview {
+        width: 122px;
+        height: 122px;
+        background-position: center center;
+      background:url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
+      background-color:#fff;
+        background-size: cover;
+      background-repeat:no-repeat;
+        display: inline-block;
+      box-shadow:0px -3px 6px 2px rgba(0,0,0,0.2);
+      border-radius: 50%;
+    }
+    .btn-primary
+    {
+      display:block;
+      border-radius:10px;
+      box-shadow:0px 4px 6px 2px rgba(0,0,0,0.2);
+     
+    }
+    .imgUp
+    {
+    
+      width: 180px;
+    }
+    
+    .imgAdd
+    {
+      color:#fff;
+      text-align:center;
+      margin-left: 5px;
+      margin-top: 12px;
+      cursor:pointer;
+      font-size:80px;
+    }
+    .addbtn
+    {
+        margin-left: 180px;
+         background-color: rgb(63, 53, 53);
+         width: 100px;
+         height: 35px;
+         color: wheat;
+        border-radius: 10px;
+        cursor: pointer;
+       
+    }
+    .scrollbar
+    {
+        margin-left: 30px;
+        float: left;
+        height: 300px;
+        width: 65px;
+        background: #F5F5F5;
+        overflow-y: scroll;
+        margin-bottom: 25px;
+    }
+    
+    .force-overflow
+    {
+        min-height: 450px;
+    }
+    
+    #wrapper
+    {
+        text-align: center;
+        width: 500px;
+        margin: auto;
+    }
+    /* width */
+    ::-webkit-scrollbar {
+      width: 10px;
+    
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background:#9fc45f; 
+      border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #8ec038; 
+    }
+    

@@ -1,0 +1,71 @@
+/* Bordered form */
+.container {
+    border: 3px solid #f1f1f1;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: rgb(248, 248, 248);
+    box-shadow: gray;
+  }
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+ 
+  }
+  /* Avatar image */
+  img.avatar {
+   margin-bottom: 5px;
+   height:100px ; 
+   width: 100px;
+ 
+    border-radius: 50%;
+  }
+   
+  /* Set a style for all buttons */
+  button {
+    
+    color: white;
+    padding: 14px 20px;
+    margin: 15px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    border-radius: 20px;
+  }
+  .cancelbtn {
+    background-color: #4CAF50;
+    width: 80px;
+    margin-left: 200px;
+  }
+  .fa
+  {
+   height: 50px;
+   width: 50px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+    color: #3A3131;
+    border-radius: 50%;
+    font-size: 36px; 
+    cursor: pointer;
+  }
+  
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#9fc45f; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8ec038; 
+}
