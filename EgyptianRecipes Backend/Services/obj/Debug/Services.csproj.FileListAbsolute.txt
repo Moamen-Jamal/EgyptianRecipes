@@ -31,3 +31,36 @@ D:\Visual\EgyptianRecipes\Services\obj\Debug\Services.csproj.CoreCompileInputs.c
 D:\Visual\EgyptianRecipes\Services\obj\Debug\Services.csproj.CopyComplete
 D:\Visual\EgyptianRecipes\Services\obj\Debug\Services.dll
 D:\Visual\EgyptianRecipes\Services\obj\Debug\Services.pdb
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\Services.dll.config
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\Services.dll
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\Services.pdb
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\Entities.dll
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\EntityFramework.dll
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\Helpers.dll
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\Repositories.dll
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\ViewModels.dll
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\Entities.pdb
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\Entities.dll.config
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\Helpers.pdb
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\Helpers.dll.config
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\Repositories.pdb
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\Repositories.dll.config
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\ViewModels.pdb
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\EntityFramework.xml
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\EntityFramework.SqlServer.xml
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\obj\Debug\Services.csprojAssemblyReference.cache
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\obj\Debug\Services.csproj.CoreCompileInputs.cache
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\obj\Debug\Services.csproj.CopyComplete
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\obj\Debug\Services.dll
+D:\Visual\EgyptianRecipes\EgyptianRecipes Backend\Services\obj\Debug\Services.pdb
